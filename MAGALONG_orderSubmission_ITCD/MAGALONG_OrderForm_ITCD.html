@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order Form</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Claire Anne S. Magalong">
+        <meta http-equiv="refresh" content="1800">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" type="text/css" href="MAGALONG_IMAGES_ITCD/MAGALONG_OrderForm_ITCD.css">
+        <link rel = "icon" href="MAGALONG_IMAGES_ITCD/WcDonalds_Logo.jpg" type= "image/x-icon"> 
+    </head>
+    <body>
+        <div align="center">
+            <h1><img class="Logo" src="MAGALONG_IMAGES_ITCD/WcDonalds_Logo.png">&nbsp;&nbsp;&nbsp;Welcome to WcDonald's!</h1>
+        </div>
+
+        <form action="MAGALONG_FeedbackForm_ITCD.html" method="post">
+            <fieldset>
+                    <h2>CUSTOMER'S INFORMATION</h2>
+                    <br>
+                    <br>
+                        <label class="information" for="Name">Name: </label>
+                        <input class="information" type="text" name="Name" id="Name" placeholder="Type your full name here." required>
+                        <br>
+                        <br>
+                        <label class="information" for="Address">Address: </label>
+                        <input class="information" type="text" name="Address" id="Address" placeholder="Type your Address here." required>
+                        <br>
+                        <br>
+                        <label class="information" for="Email">Email: </label>
+                        <input class="information" type="email" name="Email" id="Email" placeholder="Type your Email here." required>
+                        <br>
+                        <br>
+                        <label class="information" for="ContactNo">Contact Number: </label>
+                        <input class="information" type="number" name="ContactNo" id="ContactNo" placeholder="Type your Contact Number here." maxlength="12" minlength="12" min="1" required>
+                        <br>
+                        <br>
+                        <label style="width: 240px;" class="information" for="DeliveryInstructions">Add delivery instruction</label>
+                        <br>
+                        <textarea class="information" name="message" id="DeliveryInstructions"></textarea>
+                        <br>
+                </fieldset>
+                <br>
+                <br>
+                <fieldset>
+                    <h2>FOODS</h2>
+                        <div align="center" class="menu">
+                            <p>Hover around the image.</p>
+                            <img src="MAGALONG_IMAGES_ITCD/WCDONALDS MENU.png" usemap="#menu">
+                        </div>
+
+                        <map name="menu">
+                            <area shape="rect" coords="99,66,345,263" href="#burgers"/>
+                            <area shape="rect" coords="383,64,645,237" href="#pasta"/>
+                            <area shape="rect" coords="108,288,346,509" href="#fries"/>
+                            <area shape="rect" coords="396,250,627,505" href="#drinks"/>
+                        </map>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h2 id="burgers">BURGERS</h2>
+                    <div align="center" class="menu">
+                        <img style="width: 500px; height: 400px; float: left;" src="MAGALONG_IMAGES_ITCD/Burger.png">
+                    </div>
+
+                        <p><strong>Choice of Bun: </strong></p>
+                        <div>
+                            <input type="radio" id="WhiteBun" name="bun" value="WhiteBun">
+                              <label for="WhiteBun">White Bun</label>  
+                        </div>
+                        <div>
+                            <input type="radio" id="WheatBun" name="bun" value="WheatBun">
+                              <label for="WheatBun">Wheat Bun</label>  
+                        </div>
+                        <div>
+                            <input type="radio" id="honey oat" name="bun" value="honey oat">
+                              <label for="honey oat">Honey Oat</label>  
+                        </div>
+                        <div>
+                            <input type="radio" id="sugarfree" name="bun" value="sugarfree">
+                              <label for="sugarfree">Sugar Free</label>  
+                        </div>
+                        <p><strong>Add ons</strong></p>
+                        <div>
+                            <input type="checkbox" id="singlepatty">
+                            <span class="checkmark"></span>
+                            <label for="singlepatty">Single Patty
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="doule patty">
+                            <span class="checkmark"></span>
+                            <label for="doule patty">Double Patty
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="with cheese">
+                            <span class="checkmark"></span>
+                            <label for="with cheese">With Cheese
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="coleslaw">
+                            <span class="checkmark"></span>
+                            <label for="coleslaw">Coleslaw
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="tomato">
+                            <span class="checkmark"></span>
+                            <label for="tomato">Tomato
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="onion">
+                            <span class="checkmark"></span>
+                            <label for="onion">Onion
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="Pickles">
+                            <span class="checkmark"></span>
+                            <label for="Pickles">Pickles
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="Bacon">
+                            <span class="checkmark"></span>
+                            <label for="Bacon">Bacon
+                            </label>
+                        </div>
+
+                    <br>
+                    <label for="Quantity_One">Quantity: </label>
+                        <input class="Quantity" type="number" name="Quantity_One" id="Quantity_One" min="1" max="100">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h2 id="pasta">PASTA</h2>
+                    <div align="center" class="menu">
+                        <img style="width: 400px; height: 245px; float: left; padding-left: 30px; padding-right: 60px;" src="MAGALONG_IMAGES_ITCD/SPAGHETTI.png">
+                    </div>
+                    <div>
+                        <p><strong>Choice of Sauce: </strong></p>
+                        <div>
+                            <input type="radio" id="SPAGHETTI" name="pasta" value="SPAGHETTI">
+                              <label for="SPAGHETTI">Spaghetti</label>  
+                        </div>
+                        <div>
+                            <input type="radio" id="Pesto" name="pasta" value="Pesto">
+                              <label for="Pesto">Pesto</label>  
+                        </div>
+                        <div>
+                            <input type="radio" id="Carbonara" name="pasta" value="Carbonara">
+                              <label for="Carbonara">Carbonara</label>  
+                        </div>
+                        <p><strong>Extras: </strong></p>
+                        <div>
+                            <input type="checkbox" id="cheese">
+                            <span class="checkmark_one"></span>
+                            <label for="cheese">Cheese
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="sauce">
+                            <span class="checkmark_one"></span>
+                            <label for="sauce">Sauce
+                            </label>
+                        </div>
+                        <br>
+                        <label for="Quantity_two">Quantity: </label>
+                        <input class="Quantity" type="number" name="Quantity_two" id="Quantity_two" min="1" max="100" >
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <div align="center" class="menu">
+                        <h2 id="fries">FRIES</h2>
+                        <img style="width: 400px;float: left; padding-left: 30px; padding-right: 60px;" src="MAGALONG_IMAGES_ITCD/FRIES.png">
+                    </div>
+                    <p><strong>Sizes: </strong></p>
+                        <div>
+                            <input type="radio" id="Small" name="sizes" value="Small">
+                              <label for="Small">Small</label>  
+                        </div>
+                        <div>
+                            <input type="radio" id="Medium" name="sizes" value="Medium">
+                              <label for="Medium">Medium</label>  
+                        </div>
+                        <div>
+                            <input type="radio" id="Large" name="sizes" value="Large">
+                              <label for="Large">Large</label>  
+                        </div>
+                        <p><strong>Flavor: </strong></p>
+                        <div>
+                            <input type="checkbox" id="Honey Butter">
+                            <span class="checkmark_one"></span>
+                            <label for="Honey Butter">Honey Butter
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="Barbecue">
+                            <span class="checkmark_one"></span>
+                            <label for="Barbecue">Barbecue
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="Nori">
+                            <span class="checkmark_one"></span>
+                            <label for="Nori">Nori
+                            </label>
+                        </div>
+                        <br>
+                        <label for="Quantity_three">Quantity: </label>
+                        <input class="Quantity" type="number" name="Quantity_three" id="Quantity_three" min="1" max="100" >
+                </fieldset>
+                <br>
+                <fieldset>
+                    <div align="center" class="menu">
+                        <h2 id="drinks">DRINKS</h2>
+                        <img style=" height: 300px; float: left; padding-left: 120px; padding-right: 170px;" src="MAGALONG_IMAGES_ITCD/DRINKS.png">
+                    </div>
+                    <p><strong>Sizes: </strong></p>
+                        <div>
+                            <input type="radio" id="Sprite" name="drinks" value="Sprite">
+                              <label for="Sprite">Sprite</label>  
+                        </div>
+                        <div>
+                            <input type="radio" id="Coke" name="drinks" value="Coke">
+                              <label for="Coke">Coke</label>  
+                        </div>
+                        <div>
+                            <input type="radio" id="Pepsi" name="drinks" value="Pepsi">
+                              <label for="Pepsi">Pepsi</label>  
+                        </div>
+                        <div>
+                            <input type="radio" id="Royal" name="drinks" value="Royal">
+                              <label for="Royal">Royal</label>  
+                        </div>
+                    <p><strong>Sizes: </strong></p>
+                        <div>
+                            <input type="radio" id="Small_one" name="sizes_one" value="Small_one">
+                              <label for="Small_one">Small</label>  
+                        </div>
+                        <div>
+                            <input type="radio" id="Medium_one" name="sizes_one" value="Medium_one">
+                             <label for="Medium_one"> Medium</label>  
+                        </div>
+                        <div>
+                            <input type="radio" id="Large_one" name="sizes_one" value="Large_one">
+                              <label for="Large_one">Large</label>  
+                        </div>
+                        <br>
+                        <label for="Quantity_four">Quantity: </label>
+                        <input class="Quantity" type="number" name="Quantity_four" id="Quantity_four" min="1" max="100">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h2>CHECK-OUT</h2>
+                    <label for="Delivery"><img style="padding: 30px 200px 10px 200px; vertical-align: middle;" src="https://img.icons8.com/ios-glyphs/90/000000/delivery-scooter.png"/>
+                    <input input type="radio" id="Delivery" name="deliverytype" value="Delivery">
+                    Delivery</label>  
+                    <label for="Pick-Up"><img style="padding: 30px 200px 10px 200px; vertical-align: middle;" src="https://img.icons8.com/external-becris-lineal-becris/90/000000/external-pick-up-future-shopping-becris-lineal-becris.png"/>
+                    <input input type="radio" id="Pick-Up" name="deliverytype" value="Pick-Up">
+                    Pick-Up</label>  
+                    <br>
+                    <br>
+                    <br>
+                    <div align="center">
+                        <p>Let us know what ways we can improve our ordering form.</p>
+                        <label class="Feedback" style="margin-right: 390px;" for="Feedback">Add a feedback: </label>
+                        <textarea class="Feedback" name="message" id="Feedback"></textarea>
+                        <br>
+                        <br>
+                        <form action="MAGALONG_FeedbackForm_ITCD.html">
+                            <input type="submit" value="SUBMIT ORDER"/>
+                            <input type="reset" value="CLEAR FORM" />
+                        </form>
+                    </div>
+                </fieldset>
+        </form>
+                
+    </body>
+</html>
